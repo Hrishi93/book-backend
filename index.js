@@ -9,7 +9,7 @@ app.use(cors());
 app.use(bodyParser.json());
 const mongourl = "mongodb+srv://sonumahure:wmbfM1TpfstBJnhO@cluster0.684ki.mongodb.net/FDP?retryWrites=true&w=majority&appName=Cluster0"
 const localurl='mongodb://localhost:27017/FDP'
- mongoose.connect(localurl);
+ mongoose.connect(mongourl);
  app.use(express.json());
  app.use(express.urlencoded({ extended: true }));
 
